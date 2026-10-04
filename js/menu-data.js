@@ -4,7 +4,7 @@ const RESTAURANT = {
   logoImg: "",
   nameFont: "Bebas Neue",
   tagline: "Cooling Fans • Splitters • Electrical Accessories",
-  whatsapp: "923000000000",
+  whatsapp: "923234382586",
   address: "",
   currency: "Rs",
   poweredBy: "Qalbi Studio",
