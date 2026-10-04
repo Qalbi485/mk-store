@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="theme-color" content="#12100e" />
+  <title>MK Store — Online Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-top">
+      <span class="badge badge-table" id="tableBadge">🚚 Home Delivery</span>
+      <span class="badge badge-brand" id="brandBadge">QR Shop</span>
+    </div>
+
+    <div class="brand">
+      <div class="brand-logo" id="brandLogo">
+        <span class="logo-fallback" id="logoFallback">🛒</span>
+        <img id="logoImg" alt="logo" hidden />
+      </div>
+      <div class="brand-text">
+        <h1 id="rName">MK Store</h1>
+        <p class="urdu r-urdu" id="rNameUrdu"></p>
+      </div>
+    </div>
+
+    <p class="tagline" id="rTag"></p>
+
+    <div class="hero-actions">
+      <a class="btn btn-ghost" id="chatLink" target="_blank" rel="noopener">💬 WhatsApp Order</a>
+      <a class="btn btn-ghost" id="mapLink" target="_blank" rel="noopener">📍 Location</a>
+    </div>
+  </header>
+
+  <nav class="cats" id="cats"></nav>
+
+  <main class="menu" id="menuList"></main>
+
+  <footer class="foot">
+    <p id="footAddr"></p>
+    <p class="foot-brand" id="footBrand"></p>
+  </footer>
+
+  <button class="cart-fab" id="cartFab" type="button">
+    <span class="fab-icon">🛒</span>
+    <span class="fab-info">
+      <span class="fab-count" id="cartCount">0 items</span>
+      <span class="fab-total" id="cartTotal">Rs 0</span>
+    </span>
+    <span class="fab-view">View</span>
+  </button>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div>
+        <h2>Your Cart</h2>
+        <p class="urdu drawer-urdu">آپرک کارٹ</p>
+      </div>
+      <button class="icon-btn" id="closeDrawer" type="button">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="mode-toggle" id="modeToggle">
+        <button class="mode active" data-mode="delivery" type="button">🚚 Home Delivery</button>
+        <button class="mode" data-mode="pickup" type="button">🏪 Store Pickup</button>
+      </div>
+
+      <div class="field-row">
+        <label class="field">
+          <span>Phone Number <b>*</b></span>
+          <input type="tel" id="phoneInput" inputmode="numeric" placeholder="03XX XXXXXXX" maxlength="16" />
+        </label>
+        <label class="field">
+          <span>Your Name (optional)</span>
+          <input type="text" id="nameInput" placeholder="e.g. Ali" maxlength="30" />
+        </label>
+      </div>
+
+      <div id="deliveryFields">
+        <label class="field">
+          <span>Full Address <b>*</b></span>
+          <input type="text" id="addrInput" placeholder="House #, Street, Area, City" maxlength="160" />
+        </label>
+        <p class="mode-note" id="delNote"></p>
+      </div>
+
+      <p class="mode-note" id="pickupNote" hidden>🏪 Order tayyar hote hi store se pick kar lein — koi delivery charge nahi.</p>
+
+      <label class="field">
+        <span>Note (optional)</span>
+        <input type="text" id="noteInput" placeholder="Quantity ya koi khaas requirements..." maxlength="120" />
+      </label>
+
+      <div class="cart-items" id="cartItems"></div>
+
+      <div class="totals">
+        <div class="trow">
+          <span>Subtotal</span>
+          <span id="tSub">Rs 0</span>
+        </div>
+        <div class="trow" id="delRow">
+          <span>Delivery Charges</span>
+          <span id="tDel">—</span>
+        </div>
+        <div class="trow grand">
+          <span>Total</span>
+          <strong id="drawerTotal">Rs 0</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-order" id="orderBtn" type="button">
+        📲 Send Order on WhatsApp
+      </button>
+      <button class="btn btn-clear" id="clearBtn" type="button">Clear Cart</button>
+      <p class="order-hint" id="orderHint">Order WhatsApp par store ko chala jayega — Cash on Delivery.</p>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
