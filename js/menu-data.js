@@ -18,6 +18,7 @@ const RESTAURANT = {
   categories: [
     "Cooling Fans",
     "Splitters",
+    "Audio & Handsfree",
     "LED & Lighting",
     "Electrical",
     "Accessories"
@@ -50,6 +51,12 @@ const RESTAURANT = {
     { id: 20, cat: "Accessories",  emoji: "📏", img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/RG-59.jpg/330px-RG-59.jpg", name: "Coax Cable (meter)", nameUrdu: "کوکیس کیبل", desc: "RG-6 quality",                   price: 30 },
     { id: 21, cat: "Accessories",  emoji: "🔗", name: "HDMI Cable 1.5m",    nameUrdu: "ایچ ڈی ایم آئی کیبل", desc: "4K support",                 price: 400 },
     { id: 22, cat: "Accessories",  emoji: "📱", name: "Universal AC Remote", nameUrdu: "یونیورسل ریموٹ", desc: "All brands compatible",        price: 750,  popular: true },
-    { id: 23, cat: "Accessories",  emoji: "📏", name: "Fan Downrod",        nameUrdu: "فین ڈاؤن راڈ",    desc: "Steel, 1.2m",                   price: 300 }
+    { id: 23, cat: "Accessories",  emoji: "📏", name: "Fan Downrod",        nameUrdu: "فین ڈاؤن راڈ",    desc: "Steel, 1.2m",                   price: 300 },
+
+    { id: 24, cat: "Audio & Handsfree", emoji: "🎧", img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/S%C5%82uchawki_referencyjne_K-701_firmy_AKG.jpg/330px-S%C5%82uchawki_referencyjne_K-701_firmy_AKG.jpg", name: "Over-Ear Headphone", nameUrdu: "ہیڈ فون", desc: "Deep bass, padded",              price: 1200, popular: true },
+    { id: 25, cat: "Audio & Handsfree", emoji: "🎧", name: "Bluetooth Headphone", nameUrdu: "بلوٹوتھ ہیڈ فون", desc: "20hr battery, foldable",    price: 2500, popular: true },
+    { id: 26, cat: "Audio & Handsfree", emoji: "🎧", img: "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/JH16_Pro.png/330px-JH16_Pro.png", name: "Wired Handsfree", nameUrdu: "ہینڈفری", desc: "Mic + volume control",           price: 350 },
+    { id: 27, cat: "Audio & Handsfree", emoji: "🎶", name: "Wireless Earbuds",  nameUrdu: "وائرلیس ایئر بڈز", desc: "ANC, charging case",         price: 3500 },
+    { id: 28, cat: "Audio & Handsfree", emoji: "🔊", name: "Mini BT Speaker",   nameUrdu: "اسپیکر",          desc: "Portable, 10hr playtime",         price: 1800 }
   ]
 };
